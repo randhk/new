@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Annie's Page</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&amp;subset=korean" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
+    <link rel="icon" sizes="192x192" href="img/favi_192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favi_180.png">
+    <link rel="icon" sizes="32x32" href="img/favi_32.png">
+    <link rel="icon" sizes="32x32" href="img/favi_16.png">
+
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/instafeed.min.js"></script> <!-- js 파일 로드 -->
+  <script type="text/javascript">  
+     jQuery(function($) {  
+          var tocken = "5660872643.8a46e80.fe6cd30a799d4b1f98f58cef85f78b23"; /* Access Tocken 입력 */  
+          var count = "21";  
+          $.ajax({  
+              type: "GET",  
+              dataType: "jsonp",  
+              cache: false,  
+              url: "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + tocken + "&count=" + count,  
+              success: function(response) {  
+               if ( response.data.length > 0 ) {  
+                    for(var i = 0; i < response.data.length; i++) {  
+                         var insta = '<div class="insta-box">';  
+                         insta += "<a target='_blank' href='" + response.data[i].link + "'>";  
+                         insta += "<div class'image-layer'>";  
+                         //insta += "<img src='" + response.data[i].images.thumbnail.url + "'>";  
+                         insta += '<img src="' + response.data[i].images.thumbnail.url + '">';  
+                         insta += "</div>";  
+                         //console.log(response.data[i].caption.text);  
+                         if ( response.data[i].caption !== null ) {  
+                              insta += "<div class='caption-layer'>";  
+                              if ( response.data[i].caption.text.length > 0 ) {  
+                                   insta += "<p class='insta-caption'>" + response.data[i].caption.text + "</p>"  
+                              }  
+                              insta += "<span class='insta-likes'>" + response.data[i].likes.count + " Likes</span>";  
+                              insta += "</div>";  
+                         }  
+                         insta += "</a>";  
+                         insta += "</div>";  
+                         $("#instaPics").append(insta);  
+                    }  
+               }  
+               $(".insta-box").hover(function(){  
+                    $(this).find(".caption-layer").css({"backbround" : "rgba(255,255,255,0.7)", "display":"block"});  
+               }, function(){  
+                    $(this).find(".caption-layer").css({"display":"none"});  
+               });  
+              }  
+             });  
+     });  
+     </script>
+
+
+
+</head>
+<body>
+
+	<div class="jumbotron text-center">
+	  <h1 class="logo">
+      <img src="img/logo.jpg" alt="logo"> 
+    </h1>
+	</div>
+  
+  	<div class="nav bn header_nav">
+		  <div class="col-sm-12">
+        <a href="http://hkpark.epizy.com/new/main.html">WORK</a>
+        <a href="http://hkpark.epizy.com/new/about.html">ABOUT</a>
+        <a href="http://hkpark.epizy.com/new/resume.html">RESUME</a>
+		  </div>
+   	</div>		
+
+
+
+	<div class="container">
+			  <div class="row posts">
+				    <div class="col-sm-6">
+				      <img src="https://i.pinimg.com/originals/0a/4f/9e/0a4f9e4f0ea956a84973c30ad171e564.jpg" alt="me">
+				    </div>
+				    <div class="col-sm-6 introduce">
+						<h2 class="font-weight-bold hi">안녕하세요</h2><br>
+						My name is Chloe and I'm an editorial designer with a passion for finding smart solutions to difficult design challenges.<br><br>
+
+						Currently, I live in Washington, D.C. where I work as a designer and animator for Snapchat Discover at The Washington Post.<br><br>
+
+						I recently graduated with a degree in graphic design from the S.I. Newhouse School of Public Communications at Syracuse University. Most of my time there was spent at The Daily Orange, the independent student newspaper, where I designed and art directed for my first three years of college. The D.O. is where I fell in love with news design, and my work from there has been recognized in several competitions.<br><br>
+
+						Want to hear more? I can be reached for freelance opportunities or just to chat at chloeemeister@gmail.com.</p>
+				    </div>   	    
+			 	</div><!--row end--> 	
+			 <hr>
+
+			 <div id="instaPics" class="row"></div>  
+			
+			<hr>
+
+			<div class="row">
+				<div class="col-sm-9">
+					<input type="text" name="name" id="name" placeholder="Your name..">
+					<input type="text" name="email" id="email" placeholder="Your Email adress">
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+					<input type="submit" value="Submit">
+				</div>				
+				<div class="col-sm-3 text-center address">
+		            <ul class="list-unstyled mb-0">
+		                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+		                    <p>25ga-gil, Jung-gu, Seoul, Republic of Korea</p>
+		                </li>
+
+		                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+		                    <p>+ 82 10 9738 4902</p>
+		                </li>
+
+		                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+		                    <p>takihotlove@naver.com</p>
+		                </li>
+		            </ul>										
+				</div>
+			</div>
+			
+
+	</div><!--container end-->
+<footer class="footer">
+  
+    <div class="footer-text">
+      
+        Copyright © All rights reserved.
+      
+    </div>
+    <nav class="footer-social">            
+            <a href="javascript:void(0);" class="social-link" target="_blank" title="Twitter">         
+                  <i class="fab fa-twitter social-ico social-icon"></i>              
+            </a>
+        
+            <a href="javascript:void(0);" class="social-link" target="_blank" title="facebook">                
+             		<i class="fab fa-facebook-square social-icon"></i>                	
+            </a>  
+        
+            <a href="http://www.instagram.com/flytiger1216" class="social-link" target="_blank" title="Instagram">
+                <i class="fab fa-instagram social-icon"></i>
+            </a>   
+	</nav>
+
+  
+</footer>
+
+<a id="back-to-top" href="#" class="btn btn-sm back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+</body>	
+</html>
+
+<script>
+var elementPosition = $('.header_nav').offset();
+var elementP = $('.bn').offset();
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > elementPosition.top) {
+        $('.header_nav').css('position', 'fixed').css('top', '0').css('margin-top','0');
+    } else {
+        $('.header_nav').css('position', 'static').css('margin-top','10px');
+    }
+});
+
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+</script>
