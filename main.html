@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://randhk.github.io/new/default.css">
+  <link rel="stylesheet" type="text/css" href="css\default.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&amp;subset=korean" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -28,7 +28,7 @@
 	</div>
   
   	<div class="nav bn header_nav">
-		  <div class="col-sm-12">
+		  <div class="main-menu col-sm-12">
 		  	<a href="https://randhk.github.io/new/main.html">WORK</a>
 		  	<a href="https://randhk.github.io/new/about.html">ABOUT</a>
 		  	<a href="https://randhk.github.io/new/resume.html">RESUME</a>
@@ -49,7 +49,9 @@
 			  <div class="row posts">
 				 	<div class="col-sm-3  post web">
 				    	<a  data-toggle="modal" data-target="#myModal">	
-				      		<img src="https://cdn.hasselblad.com/76b83ed610abeba86b95e1c75f318564446bf8b5_b0001395.jpg" alt="">
+				      		<div class="post-thum">
+				      			
+				      		</div>
 				      	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 				         </a>	  
 				         	  <!-- Modal -->
@@ -74,7 +76,7 @@
 				   
 				    <div class="col-sm-3 post web">
 				    	<a  data-toggle="modal" data-target="#myModal1">		
-					      <img src="https://i.pinimg.com/originals/d7/f9/cf/d7f9cfd83cee9453efdbe0bc950298ce.jpg" alt="">
+					      <div class="post-thum"><img src="https://cdn.hasselblad.com/76b83ed610abeba86b95e1c75f318564446bf8b5_b0001395.jpg" alt=""></div>
 					      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 					    </a> 
 				    	<!-- Modal -->
@@ -100,7 +102,7 @@
 
 				    <div class="col-sm-3 post illust">
 					    <a  data-toggle="modal" data-target="#myModal2">				    	
-					      <img src="http://www.111ideas.com/wp-content/uploads/2018/07/nature-images-download.jpg" alt="">       
+					      <div class="post-thum"><img src="https://cdn.hasselblad.com/76b83ed610abeba86b95e1c75f318564446bf8b5_b0001395.jpg" alt=""></div>       
 					      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 						</a>
 				    	<!-- Modal -->
@@ -127,7 +129,7 @@
 
 				    <div class="col-sm-3 post etc">
 					    <a  data-toggle="modal" data-target="#myModal3">					    	
-					      <img src="https://cdn.hasselblad.com/357f007a76c96827b5909002a4c1942692f8ab30_b0000835.jpg" alt="">       
+					      <div class="post-thum"><img src="https://cdn.hasselblad.com/76b83ed610abeba86b95e1c75f318564446bf8b5_b0001395.jpg" alt=""></div>      
 					      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 					    </a>
 				    	<!-- Modal -->
@@ -210,4 +212,20 @@ $(window).scroll(function () {
         });
         
         $('#back-to-top').tooltip('show');
+
 </script>
+<script>
+    $( document ).ready( function() {
+    	img=$('.post-thum').children();
+    	if(0 < img.length){
+    		$('.post-thum').html('');
+    	}
+    	else if(0 = img.length){
+   			$('.post-thum').html('<img src="https://i.imgur.com/a92Q3oQ.jpg">');
+    	}
+    	else{
+    		return;
+    	} 	
+
+    });
+</script>-->
