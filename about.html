@@ -8,58 +8,19 @@
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&amp;subset=korean" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://randhk.github.io/new/about.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
 
-  <link rel="icon" sizes="192x192" href="https://randhk.github.io/new/favi_192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://randhk.github.io/new/favi_180.png">
-  <link rel="icon" sizes="32x32" href="https://randhk.github.io/new/favi_32.png">
-  <link rel="icon" sizes="32x32" href="https://randhk.github.io/new/favi_16.png">
+    <link rel="icon" sizes="192x192" href="https://randhk.github.io/new/favi_192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://randhk.github.io/new/favi_180.png">
+    <link rel="icon" sizes="32x32" href="https://randhk.github.io/new/favi_32.png">
+    <link rel="icon" sizes="32x32" href="https://randhk.github.io/new/favi_16.png">
 
 
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://randhk.github.io/new/instafeed.min.js"></script> <!-- js 파일 로드 -->
-  <script type="text/javascript">  
-     jQuery(function($) {  
-          var tocken = "5660872643.8a46e80.fe6cd30a799d4b1f98f58cef85f78b23"; /* Access Tocken 입력 */  
-          var count = "21";  
-          $.ajax({  
-              type: "GET",  
-              dataType: "jsonp",  
-              cache: false,  
-              url: "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + tocken + "&count=" + count,  
-              success: function(response) {  
-               if ( response.data.length > 0 ) {  
-                    for(var i = 0; i < response.data.length; i++) {  
-                         var insta = '<div class="insta-box">';  
-                         insta += "<a target='_blank' href='" + response.data[i].link + "'>";  
-                         insta += "<div class'image-layer'>";  
-                         //insta += "<img src='" + response.data[i].images.thumbnail.url + "'>";  
-                         insta += '<img src="' + response.data[i].images.thumbnail.url + '">';  
-                         insta += "</div>";  
-                         //console.log(response.data[i].caption.text);  
-                         if ( response.data[i].caption !== null ) {  
-                              insta += "<div class='caption-layer'>";  
-                              if ( response.data[i].caption.text.length > 0 ) {  
-                                   insta += "<p class='insta-caption'>" + response.data[i].caption.text + "</p>"  
-                              }  
-                              insta += "<span class='insta-likes'>" + response.data[i].likes.count + " Likes</span>";  
-                              insta += "</div>";  
-                         }  
-                         insta += "</a>";  
-                         insta += "</div>";  
-                         $("#instaPics").append(insta);  
-                    }  
-               }  
-               $(".insta-box").hover(function(){  
-                    $(this).find(".caption-layer").css({"backbround" : "rgba(255,255,255,0.7)", "display":"block"});  
-               }, function(){  
-                    $(this).find(".caption-layer").css({"display":"none"});  
-               });  
-              }  
-             });  
-     });  
-     </script>
+
+
+
 
 
 
@@ -68,7 +29,7 @@
 
 	<div class="jumbotron text-center">
 	  <h1 class="logo">
-      <img src="https://randhk.github.io/new/logo.jpg" alt="logo"> 
+      <a href="https://randhk.github.io/new/main.html"><img src="https://randhk.github.io/new/logo.jpg" alt="logo"> </a>
     </h1>
 	</div>
   
@@ -99,22 +60,86 @@
 				    </div>   	    
 			 	</div><!--row end--> 	
 			 <hr>
+      <style>
+                #instagram {overflow: hidden;width: 100%;}
+        .instagram_item {float: left;width: 20%;padding-right: 1px; padding-bottom: 1px;}
+        .instagram_item > a {display: block;width: 100%;padding-top: 100%;position: relative;background: no-repeat center center;background-size: cover;}
+        .instagram_item > a:before {content: '';position: absolute;left: 0;right: 0;top: 0;bottom: 0;background: #000000;background: rgba(0, 0, 0, .8);background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .8) 100%);background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .8) 100%);background: radial-gradient(ellipse at center, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .8) 100%);z-index: 1;opacity: 0;-webkit-transition: opacity .55s cubic-bezier(.215, .61, .355, 1);transition: opacity .55s cubic-bezier(.215, .61, .355, 1);}
+        .instagram_item p {width: 100%;padding: 19px 57px;position: absolute;left: 0;top: 50%;font-size: 16px;font-weight: 400;text-align: left;color: #fff;transform: translateY(-50%);z-index: 2;opacity: 0;-webkit-transition: opacity .55s cubic-bezier(.215,.61,.355,1);transition: opacity .55s cubic-bezier(.215,.61,.355,1);}
+        .instagram_item > a:hover:before {opacity: 1;}
+        .instagram_item > a:hover p {opacity: 1;}
+      </style>
+			 <div id="instagram" class="row"></div>  
+      <script>
+              //if(!$('.instagram').length) { return; }
 
-			 <div id="instaPics" class="row"></div>  
-			
+              var token = "IGQVJXRm95MEJwY2QwdF9hYVRHQk15MC1RMzlrektvODZAfa3pBNGZAKUkI1clZAlbWptVEVkd1BCUjRpaFFTMnc0UlVmUTNlMGtTLXZAvVU0wMkFLbm13ZAWJrcl9oZAmlPNlNyVWZAnSGhtQzIxaV9kNjVkQQZDZD";
+              $.ajax({S
+                  type: "GET",
+                  dataType: "jsonp",
+                  cache: false,
+                  url: "https://graph.instagram.com/me/media?access_token=" + token + "&fields=id,caption,media_type,media_url,thumbnail_url,permalink",
+                  success: function(response) {
+                      console.log(response);
+                      if (response.data != undefined && response.data.length > 0) {
+                          for(i = 0; i < 10; i++){
+                              if(response.data[i]){
+                                  var item = response.data[i];
+                                  var image_url = "";
+                                  var post = "";
+                                  
+                                  if(item.media_type === "VIDEO"){
+                                      image_url = item.thumbnail_url;
+                                  }else{
+                                      image_url = item.media_url;             
+                                  }
+                                  
+                                  post += '<div class="instagram_item instagram_item'+i+'">';
+                                      post += '<a href="'+ item.permalink +'" target="_blank" rel="noopener noreferrer" style="background-image: url(' + image_url + ');">';
+                                          post += '<p>'+ item.caption +'</p>';
+                                      post += '</a>';
+                                  post += '</div>';
+
+                                  $('#instagram').append(post);
+                              }else{
+                                  // if no curent item
+                                  show_fallback('#insta-item-'+i)
+                              }                        
+                          }
+                      }else{
+                          // if api error
+                          show_fallback('.instagram-item')
+                      }
+                  },
+                  error :function(){
+                      // if http error
+                      show_fallback('.instagram-item')
+                  }
+                  
+              });
+              
+              function show_fallback(el){
+                  $(el).addClass('loaded fallback');
+              }
+      </script>
+
+
+
 			<hr>
 
 			<div class="row">
 				<div class="col-sm-9">
+          <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzSSBNHlCJ7xUSVS6GJiqX1s41qQNsp7hQaul5LPTifldciem8f/exec">
 					<input type="text" name="name" id="name" placeholder="Your name..">
 					<input type="text" name="email" id="email" placeholder="Your Email adress">
-					<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-					<input type="submit" value="Submit">
+					<textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea>
+					<button type="submit" >Send</button>
+          </form>
 				</div>				
 				<div class="col-sm-3 text-center address">
 		            <ul class="list-unstyled mb-0">
 		                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-		                    <p>25ga-gil, Jung-gu, Seoul, Republic of Korea</p>
+		                    <p>Gwangnaru-ro, Gwangjin-gu, Seoul, Republic of Korea</p>
 		                </li>
 
 		                <li><i class="fas fa-phone mt-4 fa-2x"></i>
@@ -122,7 +147,7 @@
 		                </li>
 
 		                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-		                    <p>takihotlove@naver.com</p>
+		                    <p>takihotlove@gmail.com</p>
 		                </li>
 		            </ul>										
 				</div>
