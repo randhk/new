@@ -1,26 +1,57 @@
 
+/*ALL*/
 html, body { font-family: 'Noto Sans KR', sans-serif; font-weight: 300; }
 button, html input[type=button], input[type=reset], input[type=submit] { outline:none; }
 .btn:focus, .btn.active { box-shadow: 0 0; }
 
-
+/*header*/
 .jumbotron { background-color: #fff; padding-bottom: 30px; }
+.logo img { max-width:200px; }
+
+.nav  {  text-align: center;  margin: 0 0 100px 0;  z-index: 100; background: rgba(255, 255, 255, 0.8); width:100%; padding: 0;}
+.nav a { color:#333; padding:0 20px; font-size: 14px; font-weight: bold; }
+.nav a:hover { text-decoration: none; color:#aaa; }
 
 .main-menu {     display: flex; justify-content: center; }
+#filter { display: flex; justify-content: center; }
+#filter button { background-color:#ffffff;  border:none; padding:0;  margin: 0 1%;  font-family: 'Karla', sans-serif;   font-size: 15px; flex-flow: wrap;}
+#filter button.active { text-decoration:underline; }
 
 /*contatiner*/
 .container { padding:0; }
 .container .posts { clear:both; margin:50px 0; overflow: hidden; }
-.container .posts .post-thum img { width:100%; }
+.container .posts > .post { margin:0 0 1.5em 0; transition: all .5s; }
+.container .posts > .post:hover { box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.container .posts .post-thum { position: relative; }
+.container .posts .post-thum:after {  
+    content: '';
+    background-image: url(https://i.imgur.com/a92Q3oQ.jpg);
+   	max-width: 400px;
+   	max-height: 400px;
+
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container .posts .post-thum > img { width:100%;  }
 .container .posts .post-thum p { padding:5px 0; margin:0;} 
 .container .posts a { cursor: pointer; color:#333; }
 .container .posts a:hover { opacity: 0.7; }
 
-.modal-header { padding:15px 15px 0 15px; }
+
+.modal-header { padding:15px ; }
+.modal-header .close { font-size: 25px; }
 .modal-header .modal-title { font-weight: normal; }
 .modal-header, .modal-footer { border:none;  }
 .modal-header button { display: block; }
 .modal-content { border-radius:0; box-shadow: none; border:none; }
+.modal-body { text-align: center; }
+.modal-body p { margin:20px 0 0 0; line-height: 26px; }
 .modal-footer { padding:15px 0 0 0; }
 .modal-footer button { display:none; background-color: #FCE602; color: #333; border:none; border-radius: 0; width: 100%; padding:15px 0; font-size: 16px; }
 
@@ -38,24 +69,6 @@ footer .footer-social .social-icon { font-size: 13px; color:#222;  position: abs
 
 
 
-.logo img { max-width:200px; }
-
-.nav  {  text-align: center;  margin: 0 0 100px 0;  z-index: 100; background: rgba(255, 255, 255, 0.8); width:100%; padding: 0;}
-.nav a { color:#333; padding:0 20px; font-size: 14px; font-weight: bold; }
-.nav a:hover { text-decoration: none; color:#aaa; }
-
-#filter { display: flex; justify-content: center; }
-#filter button { background-color:#ffffff;  border:none; padding:0;  margin: 0 1%;  font-family: 'Karla', sans-serif;   font-size: 15px; flex-flow: wrap;}
-#filter button.active { text-decoration:underline; }
-
-
-.row .post-thum:after {  background-image: url('https://i.imgur.com/a92Q3oQ.jpg');}
-
-
-.list-unstyled li:nth-child(1) { margin:1.1rem 0 0 0; }
-.list-unstyled li:nth-child(2),.list-unstyled li:nth-child(3) { margin:4rem 0 0 0; }
-.list-unstyled li i { font-size: 2.5em; }
-.list-unstyled li p { font-size: 1.2em; margin-top: 0.75rem; word-wrap: break-word; }
   	
 
 
@@ -67,7 +80,8 @@ footer .footer-social .social-icon { font-size: 13px; color:#222;  position: abs
 .nav a { padding:0 25px; }
 
 .container .posts { display:flex; flex-flow:wrap; }
-.container .posts > .post { width:50%; } 
+.container .posts > .post { width:50%;  } 
+.modal .modal-body img { width:100%; }
 #filter { display: flex; justify-content: center; flex-flow: column; }
 #filter button {  font-size: 14px;margin: 0 0 3% 0;}
 #filter button.active { text-decoration:underline; }
@@ -76,7 +90,7 @@ footer .footer-social .social-icon { font-size: 13px; color:#222;  position: abs
 }
 
 @media all and (max-width : 767px)  { 
+.main-menu { padding:1.5em 0; }
 .container {   padding: 0 2%; }
-.container .posts { display:flex; flex-flow:wrap; }
-.container .posts > .post { width:100%; } 
+
 }

@@ -1,16 +1,19 @@
        
+/*ALL*/
 html, body { font-family: 'Noto Sans KR', sans-serif; font-weight: 300; }
 button, html input[type=button], input[type=reset], input[type=submit] { outline:none; }
 .btn:focus, .btn.active { box-shadow: 0 0; }
 
+/*header*/
 .jumbotron { background-color: #fff; padding-bottom: 30px; }
+.logo img { max-width:200px; }
 
-
-h2.hi { margin:10px 0; font-size: 1.5em; }
-.nav  {  text-align: center;  margin: 0 0 100px 0;  z-index: 100; background: rgba(255, 255, 255, 0.8); width:100%;}
-.nav a { color:#333; padding:0 20px; font-size: 14px; font-weight: bold;  }
+.nav  {  text-align: center;  margin: 0 0 100px 0;  z-index: 100; background: rgba(255, 255, 255, 0.8); width:100%; padding: 1.5em 0;}
+.nav a { color:#333; padding:0 20px; font-size: 14px; font-weight: bold; }
 .nav a:hover { text-decoration: none; color:#aaa; }
 
+
+/*contents*/
 .row div img { width:100%; }
 
 hr { margin:60px 0; }
@@ -31,7 +34,7 @@ footer .footer-social .social-icon { font-size: 13px; color:#222;  position: abs
 
 
 @media all and (min-width : 320px)  {  
-      .nav { padding: 1em 0; }
+
 
       .logo img { max-width:200px; }
       #instaPics {  display:flex; justify-content: center; flex-flow: wrap; }  
@@ -39,8 +42,8 @@ footer .footer-social .social-icon { font-size: 13px; color:#222;  position: abs
       .introduce { font-size:1em; margin:20px 0 0 0; }  
 
       input[type=text], textarea { width:100%; margin: 20px 0; outline: none; -webkit-appearance: none; border-bottom: 1px solid #ccc; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #ccc; }
-      input[type=submit] { background-color: #4CAF50; color: white; padding: 12px 20px; border: none; cursor: pointer; display:block; margin:0 auto; }
-      input[type=submit]:hover { background-color: #45a049; }
+      button[type="submit"] { background-color: #333; color: white; padding: 10px 20px; border: none; cursor: pointer; display:block; margin:0 auto; }
+    
      
       .address { margin:80px 0 0 0; }
       .list-unstyled li:nth-child(1) { margin:1.1rem 0 0 0; }
@@ -60,8 +63,6 @@ footer .footer-social .social-icon { font-size: 13px; color:#222;  position: abs
 }
 
 @media all and (min-width : 1025px)  {
-      .nav { padding: 0; }      
-
       #instaPics {  display:flex; justify-content: left; }
       .insta-box {  margin: 0.7%;  } 
       .introduce {  margin:0; } 

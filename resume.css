@@ -10,7 +10,7 @@ button, html input[type=button], input[type=reset], input[type=submit] { outline
 /*contatiner*/
 h2 { margin:20px 0 5px 0;}
 h2 span { font-family: 'Noto Sans KR', sans-serif; font-size:0.5em; }
-h3 { font-size: 1.2em;  margin:20px 0 5px 0; }
+h3 { font-size: 1.2em;  margin:50px 0 15px 0; }
 
 
 .box { margin:50px 0; }	
