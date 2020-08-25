@@ -1,12 +1,14 @@
-       
+
 /*ALL*/
-html, body { font-family: 'Noto Sans KR', sans-serif; font-weight: 300; }
+html, body { font-family: 'Noto Sans KR', sans-serif; font-weight: 300; cursor:url('https://i.imgur.com/VkH5cZJ.png'),url('https://randhk.github.io/new/cursor.cur'),auto; }
+
+a,button { cursor:url('https://i.imgur.com/aZAf1Po.png'),url('https://randhk.github.io/new/cursor_hover.cur'),auto;}
 button, html input[type=button], input[type=reset], input[type=submit] { outline:none; }
 .btn:focus, .btn.active { box-shadow: 0 0; }
 
 /*header*/
 .jumbotron { background-color: #fff; padding-bottom: 30px; }
-.logo img { max-width:200px; }
+.logo img { max-width:235px; }
 
 .nav  {  text-align: center;  margin: 0 0 100px 0;  z-index: 100; background: rgba(255, 255, 255, 0.8); width:100%; padding: 1.5em 0;}
 .nav a { color:#333; padding:0 20px; font-size: 14px; font-weight: bold; }
