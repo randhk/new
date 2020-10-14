@@ -10,7 +10,7 @@ button, html input[type=button], input[type=reset], input[type=submit] { outline
 .jumbotron { background-color: #fff; padding-bottom: 30px; }
 .logo img { max-width:235px; }
 
-.nav  {  text-align: center;  margin: 0 0 70px 0;  z-index: 100; background: rgba(255, 255, 255, 0.8); width:100%; padding: 0;}
+.nav  {  text-align: center;  margin: 0 0 70px 0;  z-index: 100; background: rgba(255, 255, 255, 0.8); width:100%; padding: 1.5em 0;}
 .nav a { color:#333; padding:0 20px; font-size: 14px; font-weight: bold; }
 .nav a:hover { text-decoration: none; color:#aaa; }
 
@@ -49,8 +49,6 @@ button, html input[type=button], input[type=reset], input[type=submit] { outline
 .modal-footer { padding:15px 0 0 0; }
 .modal-footer button { display:none; background-color: #FCE602; color: #333; border:none; border-radius: 0; width: 100%; padding:15px 0; font-size: 16px; }
 
-
-
 footer { color:#333; font-size:12px; text-align: center; padding: 90px 0 40px 0; }
 footer .footer-social { text-align: center;  display: block; font-size: 11px; position: relative;  padding: 20px 0; }
 footer .footer-social .social-link { width: 11px; height: 11px; margin: 0 20px; }
@@ -61,7 +59,7 @@ footer .footer-social .social-icon { font-size: 13px; color:#222;  position: abs
 
 
 @media all and (max-width : 1023px)  {  
-      
+ .nav  { padding:1.5em 0; }	
 .logo img { max-width:250px; }
 .nav a { padding:0 25px; }
 
@@ -76,8 +74,5 @@ footer .footer-social .social-icon { font-size: 13px; color:#222;  position: abs
 }
 
 @media all and (max-width : 767px)  { 
-.nav  { padding:1.5em 0; }	
-.main-menu { padding:1.5em 0; }
 .container {   padding: 0 2%; }
-
 }
