@@ -45,7 +45,7 @@ footer .footer-social .social-icon { font-size: 13px; color:#222;  position: abs
 
 	  .logo img { max-width:200px; }
 
-	  .nav  {  text-align: center;  margin: 0 0 100px 0;  z-index: 100; background: rgba(255, 255, 255, 0.8); width:100%;}
+	  .nav  {   padding: 1.5em 0; text-align: center;  margin: 0 0 100px 0;  z-index: 100; background: rgba(255, 255, 255, 0.8); width:100%;}
 	  .nav a { color:#333; padding:0 20px; font-size: 14px; font-weight: bold; }
 	  .nav a:hover { text-decoration: none; color:#aaa; }
 
