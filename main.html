@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Annies's Page</title>
+  <title>Annies's HOME</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://randhk.github.io/new/default.css">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&amp;subset=korean" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="icon" sizes="192x192" href="https://randhk.github.io/new/favi_192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="https://randhk.github.io/new/favi_180.png">
   <link rel="icon" sizes="32x32" href="https://randhk.github.io/new/favi_32.png">
   <link rel="icon" sizes="32x32" href="https://randhk.github.io/new/favi_16.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://randhk.github.io/new/filtering.js"></script>
+  <script src="https://randhk.github.io/new/default.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -27,9 +29,9 @@
   
   	<div class="nav bn header_nav">
 		  <div class="main-menu col-sm-12">
-		  	<a href="https://randhk.github.io/new/main.html">WORK</a>
-		  	<a href="https://randhk.github.io/new/about.html">ABOUT</a>
-		  	<a href="https://randhk.github.io/new/resume.html">RESUME</a>
+			  <a href="https://randhk.github.io/new/main.html">WORK</a>
+	          <a href="https://randhk.github.io/new/resume.html">RESUME</a>
+	          <a href="https://randhk.github.io/new/about.html">CONTACT</a> 
 		  </div>
    	</div>		
 	<div class="container">
@@ -37,14 +39,13 @@
 				<button type="button" class='all'>ALL</button>
 			    <button type="button" class='web'>WEB</button>
 			    <button type="button" class='design'>DESIGN</button>
-			    <button type="button" class='illust'>ILLUST</button>
 			    <button type="button" class='etc'>ETC</button>	    
 			 </div>	
 			  <div class="row posts">
 				    <div class="col-sm-3 post web">
-				    	<a  data-toggle="modal" data-target="#myModal-web1">		
+				    	<a data-toggle="modal" data-target="#myModal-web1">		
 					      <div class="post-thum"><img src="https://i.imgur.com/ooBQkad.jpg" alt="레드프린팅"></div>
-					      <p></p>
+					      <p class="post-thum-ttl">WEB - 레드프린팅</p>
 					    </a> 
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-web1" role="dialog">
@@ -60,13 +61,18 @@
 						          </a>
 						          <h4 class="modal-title">Publishing</h4>
 						        </div>
-						        <div class="modal-body">
-						           <img src="https://i.imgur.com/ooBQkad.jpg" alt="">
-						         
-						           <p>
-						           	레드프린팅<br>
-						           	 <a href="https://www.redprinting.co.kr/ko">https://www.redprinting.co.kr/ko</a>
+						        <div class="modal-body modal-body-imgs">
+		 				            <p>
+						           	<strong>레드프린팅</strong><br>
+						            온라인 인쇄 사이트<br>
+						            주요업무 : 상품상세, 랜딩페이지, 사이트 리뉴얼 퍼블, 유지보수 업무<br>		            
+  					           	    <a target="_blank" href="https://www.redprinting.co.kr/ko">https://www.redprinting.co.kr/ko</a>
 						           </p>
+		 				            
+  				           	 		<a target="_blank" href="https://www.redprinting.co.kr/ko/landing/slipper_event"><img src="https://i.imgur.com/CSh7n78.jpg" alt="슬리퍼랜딩"></a>
+						           	<a target="_blank" href="https://www.redprinting.co.kr/ko/landing/redguide"><img src="https://i.imgur.com/rfRXLT0.jpg" alt="가이드"></a>
+						           	<a target="_blank" href="https://www.redprinting.co.kr/ko/landing/valentine"><img src="https://i.imgur.com/mFthvk0.jpg" alt="발렌타인"></a>
+						           	<a target="_blank" href="https://www.redprinting.co.kr/ko/guide2"><img src="https://i.imgur.com/xiKB4CW.jpg" alt="제작가이드"></a>
 						        </div>
 						        <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal"> X </button>
@@ -78,7 +84,7 @@
 				    <div class="col-sm-3 post web">
 				    	<a  data-toggle="modal" data-target="#myModal-web2">		
 					      <div class="post-thum"><img src="https://i.imgur.com/tZ8AjRo.jpg" alt="Qmodo"></div>
-					      <p></p>
+					      <p class="post-thum-ttl">WEB - Qmodo</p>
 					    </a> 
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-web2" role="dialog">
@@ -95,13 +101,14 @@
 						          <h4 class="modal-title">Publishing</h4>
 						        </div>
 						        <div class="modal-body">
-						           <img src="https://i.imgur.com/tZ8AjRo.jpg" alt="">
-						          
-						           <p>
-						           	QMODO<br>
-						           	<a href="https://www.qmodo.com.au/">https://www.qmodo.com.au/</a>
+						          	<p>
+							           	<strong>QMODO</strong><br>
+							           	호주 온라인 인쇄 사이트<br>
+							           	주요 업무 : 사이트 제작 시 전체 페이지 퍼블리싱 작업<br>
+							           	<a  target="_blank" href="https://www.qmodo.com.au/">https://www.qmodo.com.au/</a>
 						       		</p>
-						        </div>
+						           <img src="https://i.imgur.com/tZ8AjRo.jpg" alt="">
+		                 		</div>
 						        <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal"> X </button>
 						        </div>
@@ -112,7 +119,7 @@
 				    <div class="col-sm-3 post web">
 				    	<a  data-toggle="modal" data-target="#myModal-web3">		
 					      <div class="post-thum"><img src="https://i.imgur.com/H7eLgb1.jpg" alt="adprint"></div>
-					      <p></p>
+					      <p class="post-thum-ttl">WEB - Adprint </p>
 					    </a> 
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-web3" role="dialog">
@@ -128,13 +135,22 @@
 						          </a>
 						          <h4 class="modal-title">Publishing</h4>
 						        </div>
-						        <div class="modal-body">
-						           <img src="https://i.imgur.com/H7eLgb1.jpg" alt="adprint">
-						          
-						           <p>
-						           	Adprint - Sticker<br>
-						           	<a href="https://www.adprint.jp/Product/Sub/st.aspx?Code=ST/">https://www.adprint.jp/Product/Sub/st.aspx?Code=ST</a>
-						           </p>
+						        <div class="modal-body modal-body-imgs">
+						        	<p>
+						           	<strong>Adprint - Sticker</strong><br>
+						           	일본 온라인 인쇄 사이트<br>
+						           	주요 업무 : 상품 상세 및 랜딩페이지 퍼블리싱 외 디자인 겸업<br>
+						           	<a  target="_blank" href="https://www.adprint.jp/Product/Sub/st.aspx?Code=ST/">Adprint 스티커 메인페이지</a><br>
+						           </p>	
+						           
+						           
+					           		<a target="_blank" href="https://www.adprint.jp/Partner/Page?contentsCode=seal_acticle_list&joinerId=237"><img src="https://i.imgur.com/y0pYyte.jpg" alt="나루호도기사"></a>
+						           	<a target="_blank" href="https://www.adprint.jp/Partner/Page?contentsCode=OUTDOORST10_ROLL20_RETACK20OFF_201709&joinerId=237"><img src="https://i.imgur.com/81c71E9.jpg" alt="리텍"></a>
+						           	<a target="_blank" href="https://www.adprint.jp/Partner/Page?contentsCode=COMIKETEVENT2018&joinerId=237"><img src="https://i.imgur.com/EWuBADG.jpg" alt="코미케"></a>
+						           	<a target="_blank" href="https://www.adprint.jp/Partner/Page?contentsCode=OLYMPICSALE&joinerId=237"><img src="https://i.imgur.com/kBUXexV.jpg" alt="올림픽"></a>
+						           	<a target="_blank" href="https://www.adprint.jp/Partner/Page?contentsCode=NEWYEAR2018SALE&joinerId=237"><img src="https://i.imgur.com/WpiFv54.jpg" alt="신년세일"></a>
+						           	<a target="_blank" href="https://www.adprint.jp/Partner/Page?contentsCode=STICKERSUMMERFESTA&joinerId=237"><img src="https://i.imgur.com/wjIMemP.jpg" alt="여름세일"></a>
+						           	<a target="_blank" href="https://www.adprint.jp/Partner/Page?contentsCode=STICKERAUTUMNFESTA&joinerId=237"><img src="https://i.imgur.com/1Y3uX9m.jpg" alt="가을세일"></a>
 						        </div>
 						        <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal"> X </button>
@@ -144,9 +160,9 @@
 						  </div><!--modal end-->	 
 				    </div>
 				    <div class="col-sm-3 post web">
-				    	<a  data-toggle="modal" data-target="#myModal-web4">		
+				    	<a data-toggle="modal" data-target="#myModal-web4">		
 					      <div class="post-thum"><img src="https://i.imgur.com/B1UfUcz.jpg" alt="adsticker"></div>
-					      <p></p>
+					      <p class="post-thum-ttl">WEB - Adsticker</p>
 					    </a> 
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-web4" role="dialog">
@@ -163,12 +179,13 @@
 						          <h4 class="modal-title">Publishing</h4>
 						        </div>
 						        <div class="modal-body">
-						           <img src="https://i.imgur.com/B1UfUcz.jpg" alt="adsticker">
-						           
 						           <p>
-					           		Adprint - Sticker<br>
-					           		<a href="https://www.adsticker.sg/">https://www.adsticker.sg/</a>
-						       		</p>
+					           		<strong>Adsticker - Sticker</strong><br>
+					           		싱가폴 스티커 전문 인쇄 사이트 (현재 운영 중단)<br>
+					           		주요 업무 : 전체 사이트 퍼블리싱 및 샘플 디자인 겸업<br>
+					           		<a  target="_blank" href="https://www.adsticker.sg/">https://www.adsticker.sg/</a>
+						       		</p>						           
+						           <img src="https://i.imgur.com/B1UfUcz.jpg" alt="adsticker">
 						        </div>
 						        <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal"> X </button>
@@ -180,7 +197,7 @@
 				    <div class="col-sm-3 post web">
 				    	<a  data-toggle="modal" data-target="#myModal-web5">		
 					      <div class="post-thum"><img src="https://i.imgur.com/Cs1WwSY.jpg" alt="makumaku"></div>
-					      <p></p>
+					      <p class="post-thum-ttl">WEB - MAKUMAKU</p>
 					    </a> 
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-web5" role="dialog">
@@ -197,12 +214,14 @@
 						          <h4 class="modal-title">Publishing</h4>
 						        </div>
 						        <div class="modal-body">
-						           <img src="https://i.imgur.com/Cs1WwSY.jpg" alt="makumaku">
-						          
-						           <p>
-						           		Adprint - Sticker<br>
-						           		<a href="https://www.makumaku.jp/EachMain/Index">https://www.makumaku.jp/EachMain/Index</a>
+						           	<p>
+						           		<strong>MAKUMAKU</strong><br>
+						           		일본 현수막, 노보리, 배너 인쇄 사이트<br>
+						           		주요 업무 : 요청시 컨텐츠 추가 및 수정 (Git 작업)<br>
+						           		<a  target="_blank" href="https://www.makumaku.jp/EachMain/Index">https://www.makumaku.jp/EachMain/Index</a>
 						       		</p>
+						          	<img src="https://i.imgur.com/Cs1WwSY.jpg" alt="makumaku">
+
 						        </div>
 						        <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal"> X </button>
@@ -214,7 +233,7 @@
 				    <div class="col-sm-3 post web">
 				    	<a  data-toggle="modal" data-target="#myModal-web6">		
 					      <div class="post-thum"><img src="https://i.imgur.com/qtSTynx.jpg" alt="Phototruck"></div>
-					      <p></p>
+					      <p class="post-thum-ttl">WEB - PHOTO TRUCK</p>
 					    </a> 
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-web6" role="dialog">
@@ -231,12 +250,13 @@
 						          <h4 class="modal-title">Publishing</h4>
 						        </div>
 						        <div class="modal-body">
-						           <img src="https://i.imgur.com/qtSTynx.jpg" alt="Phototruck">
-						          
-						           <p>
-						           		Redprinting - Phototruck Service (Mobile Ver.)<br>
-						           		<a href="https://redmakers.co.kr/"  target="_blank">https://redmakers.co.kr/</a>
+						           	<p>
+						           	<strong>Redprinting - Phototruck Service (Mobile Ver.)</strong><br>
+						           	레드프린팅 포토트럭 서비스 페이지<br>
+						           	주요 업무 : 전체 페이지 퍼블리싱 작업<br>
+						           	<a  target="_blank" href="https://redmakers.co.kr/"  target="_blank">https://redmakers.co.kr/</a>
 						       		</p>
+						       		<img src="https://i.imgur.com/qtSTynx.jpg" alt="Phototruck">
 						        </div>
 						        <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal"> X </button>
@@ -247,8 +267,8 @@
 				    </div>
 				    <div class="col-sm-3 post web">
 				    	<a  data-toggle="modal" data-target="#myModal-web7">		
-					      <div class="post-thum"><img src="https://i.imgur.com/EHR9EVH.jpg" alt="Phototruck"></div>
-					      <p></p>
+					      <div class="post-thum"><img src="https://i.imgur.com/EHR9EVH.jpg" alt="HISWILL"></div>
+					      <p class="post-thum-ttl">WEB - HISWILL</p>
 					    </a> 
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-web7" role="dialog">
@@ -265,12 +285,13 @@
 						          <h4 class="modal-title">Publishing</h4>
 						        </div>
 						        <div class="modal-body">
-						           <img src="https://i.imgur.com/EHR9EVH.jpg" alt="Phototruck">
-						          
-						           <p>
-						           		HISWILL - Business / Corporate Websites<br>
-						           		<a href="https://hiswill.co.kr/" target="_blank">https://hiswill.co.kr/</a>
+						           	<p>
+						           		<strong>HISWILL - Business / Corporate Websites</strong><br>
+						           		히즈윌 회사 소개 사이트 작업<br>
+						           		주요 업무 : 전체 페이지 퍼블리싱 작업<br>
+						           		<a target="_blank" href="https://hiswill.co.kr/" target="_blank">https://hiswill.co.kr/</a>
 						       		</p>
+						           <img src="https://i.imgur.com/EHR9EVH.jpg" alt="HISWILL">					          
 						        </div>
 						        <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal"> X </button>
@@ -282,7 +303,7 @@
 				    <div class="col-sm-3 post web">
 				    	<a  data-toggle="modal" data-target="#myModal-web8">		
 					      <div class="post-thum"><img src="https://i.imgur.com/YZAWwQu.jpg" alt="Redprinting_album"></div>
-					      <p></p>
+					      <p class="post-thum-ttl">WEB - RED ALBUM SITE</p>
 					    </a> 
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-web8" role="dialog">
@@ -299,26 +320,25 @@
 						          <h4 class="modal-title">Publishing</h4>
 						        </div>
 						        <div class="modal-body">
-						           <img src="https://i.imgur.com/YZAWwQu.jpg" alt="Phototruck">
-						          
-						           <p>
-						           		Redprinting - Photo Album site<br>
+						           	<p>
+						           		<strong>Redprinting - Photo Album site</strong><br>
+						           		레드 프린팅 - B2B사이트 앨범 및 책자 사이트(오픈전)<br>
+						           		주요 업무 : 전체 페이지 퍼블리싱 작업<br>
 						           		<a href="" target="_blank">Redprinting - Photo Album</a>
 						       		</p>
+						       		<img src="https://i.imgur.com/YZAWwQu.jpg" alt="Phototruck">
 						        </div>
 						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal"> X </button>
 						        </div>
 						      </div>		      
 						    </div>
 						  </div><!--modal end-->	 
 				    </div>
 
-
 				 	<div class="col-sm-3  post design">
 				    	<a  data-toggle="modal" data-target="#myModal-design1">	
-							 <div class="post-thum"><img src="https://i.imgur.com/wZuvC8u.jpg"></div>
-				      	 	<p></p>
+							<div class="post-thum"><img src="https://i.imgur.com/wZuvC8u.jpg"></div>
+				      	 	<p class="post-thum-ttl">사이트 컨텐츠 샘플 디자인 작업</p>
 				         </a>	  
 				         	  <!-- Modal -->
 							  <div class="modal fade" id="myModal-design1" role="dialog">
@@ -334,12 +354,21 @@
 						          </a>
 							          <h4 class="modal-title">Design</h4>
 							        </div>
-							        <div class="modal-body">
-							        	<img src="https://i.imgur.com/wZuvC8u.jpg" alt="">
-							          	<p>Design - Singapore</p>
-							        </div>
+							        <div class="modal-body modal-body-imgs">
+							          	<p><strong>Design - Singapore</strong><br>
+							          	 싱가폴 스티커 전문 사이트 애드스티커에 들어가는 샘플 제작<br>
+							          	<a href="https://www.adsticker.sg/">https://www.adsticker.sg/</a>
+							          	</p>		
+							        	
+							        	<img src="https://i.imgur.com/OIOh1bg.png" alt="싱가폴샘플1">
+							        	<img src="https://i.imgur.com/MOiA4l9.png" alt="싱가폴샘플2">
+							        	<img src="https://i.imgur.com/MF36nfp.png" alt="싱가폴샘플3">
+							        	<img src="https://i.imgur.com/HSggwyB.png" alt="싱가폴샘플4">
+							        	<img src="https://i.imgur.com/IQDASeg.png" alt="싱가폴샘플5">
+							        	<img src="https://i.imgur.com/JvdHEXd.png" alt="싱가폴샘플6">
+							        	<img src="https://i.imgur.com/ILKVDU9.png" alt="싱가폴샘플7">
+					       			</div>
 							        <div class="modal-footer">
-							          
 							        </div>
 							      </div>		      
 							    </div>
@@ -347,8 +376,8 @@
 				    </div>
 				 	<div class="col-sm-3  post design">
 				    	<a  data-toggle="modal" data-target="#myModal-design2">	
-							 <div class="post-thum"><img src="https://i.imgur.com/Pwch0VT.jpg"></div>
-				      	 	<p></p>
+							<div class="post-thum"><img src="https://i.imgur.com/Pwch0VT.jpg"></div>
+				      	 	<p class="post-thum-ttl">스티커 고객 요청 디자인 작업</p>
 				         </a>	  
 				         	  <!-- Modal -->
 							  <div class="modal fade" id="myModal-design2" role="dialog">
@@ -364,21 +393,47 @@
 						          </a>
 							          <h4 class="modal-title">Design</h4>
 							        </div>
-							        <div class="modal-body">
-							        	<img src="https://i.imgur.com/Pwch0VT.jpg" alt="">
-							          	<p>Design - Japan</p>
+							        <div class="modal-body modal-body-imgs">
+							        	<p><strong>Design - Japan</strong><br>
+							          	 애드프린트 스티커 - 고객 요청 디자인 <br>
+							          	 퍼블리싱 업무와 겸업	          	 
+							          	</p>
+							        	<img src="https://i.imgur.com/eChkxGe.png" alt="흑마늘">
+							        	<img src="https://i.imgur.com/c7ou4co.png" alt="향수">
+							        	<img src="https://i.imgur.com/Rii1BAd.png" alt="양파">
+							        	<img src="https://i.imgur.com/obACjNa.png" alt="유자잼">
+							        	<img src="https://i.imgur.com/8Dtdk9a.png" alt="커피">
+							        	<img src="https://i.imgur.com/drOK7uJ.png" alt="개간식">
+							        	<img src="https://i.imgur.com/GV4TbPQ.png" alt="쿠폰">
+							        	<img src="https://i.imgur.com/o49DRot.png" alt="치과">
+							        	<img src="https://i.imgur.com/TEZ1lxG.png" alt="가게홍보">
+							        	<img src="https://i.imgur.com/zz7tYLk.png" alt="에어컨홍보">
+							        	<img src="https://i.imgur.com/BecXXIb.png" alt="농원">
+							        	<img src="https://i.imgur.com/eAIwOPN.png" alt="수리">
+							        	<img src="https://i.imgur.com/B0tYDnr.png" alt="특산물라벨">
+							        	<img src="https://i.imgur.com/WZOTS09.png" alt="물고기관리">
+							        	<img src="https://i.imgur.com/lK0teUy.png" alt="건강식품라벨">
+							        	<img src="https://i.imgur.com/dIjlcVh.png" alt="화장품라벨">
+							        	<img src="https://i.imgur.com/3NCF4fp.png" alt="수산물라벨">
+							        	<img src="https://i.imgur.com/uHwN5IZ.png" alt="과일라벨">
+							        	<img src="https://i.imgur.com/DcupJeJ.png" alt="매실절임라벨">
+							        	<img src="https://i.imgur.com/Wn92zyy.png" alt="유자후추">
+							        	<img src="https://i.imgur.com/nE19LL0.png" alt="칠리소스">
+							        	<img src="https://i.imgur.com/N4rgrAo.png" alt="도시락박스티커">
+							        	<img src="https://i.imgur.com/QxMDEbk.png" alt="먹는방법">
+							        	<img src="https://i.imgur.com/BepX7NI.png" alt="정수기">
 							        </div>
 							        <div class="modal-footer">
-							          
 							        </div>
 							      </div>		      
 							    </div>
 							  </div><!--modal end-->					  
 				    </div>
-				    <div class="col-sm-3 post illust">
+
+				    <div class="col-sm-3 post etc">
 					    <a  data-toggle="modal" data-target="#myModal-ill1">				    	
 					      <div class="post-thum"><img src="https://i.imgur.com/gKLLp5M.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt=""></div>       
-					      <p></p>
+					      <p class="post-thum-ttl">게임 일러스트</p>
 						</a>
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-ill1" role="dialog">
@@ -395,10 +450,12 @@
 						          <h4 class="modal-title">Game Illustration</h4>
 						        </div>
 						        <div class="modal-body">
+						           <p><strong>Game Illustration</strong><br>
+						           	사용 툴은 포토샵, 모작/자작
+						           </p>						        	
 						           <img src="https://i.imgur.com/gKLLp5M.jpg" alt="Game Illustration">
 						           <img src="https://i.imgur.com/sBnUN8h.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt="Game Illustration">
 						           <img src="https://i.imgur.com/rY7TbWW.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt="Game Illustration">
-						           <p>Game Illustration - Photoshop</p>
 						        </div>
 						        <div class="modal-footer">
 						          
@@ -407,10 +464,10 @@
 						    </div>
 						  </div><!--modal end-->	
 					</div>			    	    
-				    <div class="col-sm-3 post illust">
+				    <div class="col-sm-3 post etc">
 					    <a  data-toggle="modal" data-target="#myModal-ill3">				    	
 					      <div class="post-thum"><img src="https://i.imgur.com/LBx8e1t.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt="Illustration"></div>       
-					      <p></p>
+					      <p class="post-thum-ttl">자작 일러스트</p>
 						</a>
 				    	<!-- Modal -->
 						  <div class="modal fade" id="myModal-ill3" role="dialog">
@@ -427,6 +484,9 @@
 						          <h4 class="modal-title">Illustration</h4>
 						        </div>
 						        <div class="modal-body modal-body-imgs">
+						           <p><strong>Illustration</strong><br>
+						           	사용 툴 포토샵, 자작
+						           </p>
 						           <img src="https://i.imgur.com/LBx8e1t.jpg" alt="Illustration">
 						           <img src="https://i.imgur.com/fBU82Ov.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt="Illustration">
 						           <img src="https://i.imgur.com/P7yFbiJ.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt="Illustration">
@@ -435,7 +495,6 @@
 						           <img src="https://i.imgur.com/ciECldz.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt="Illustration">
 						           <img src="https://i.imgur.com/sfVtKrP.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt="Illustration">
 						           <img src="https://i.imgur.com/7EjZPOa.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt="Illustration">
-						           <p>Illustration - Photoshop</p>
 						        </div>
 						        <div class="modal-footer">
 						          
@@ -444,11 +503,10 @@
 						    </div>
 						  </div><!--modal end-->	
 					</div>	
-
 				    <div class="col-sm-3 post etc">
 					    <a  data-toggle="modal" data-target="#webtoon1">					    	
 					      <div class="post-thum"><img src="https://i.imgur.com/qM98XGQ.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt=""></div>      
-					      <p></p>
+					      <p class="post-thum-ttl">웹툰 1</p>
 					    </a>
 				    	<!-- Modal -->
 						  <div class="modal fade" id="webtoon1" role="dialog">
@@ -464,13 +522,14 @@
 						          <h4 class="modal-title">Webtoon 1</h4>
 						        </div>
 						        <div class="modal-body">
+						           <p><strong>Webtoon 1</strong><br>
+						           사용 툴은 포토샵, 자작
+						           </p>
 						           <img src="https://i.imgur.com/qM98XGQ.jpg" alt="">
 						           <img src="https://i.imgur.com/6zAk0As.jpg" alt="">
 						           <img src="https://i.imgur.com/Sbohfvd.jpg" alt="">
-						           <p>Webtoon - Photoshop</p>
 						        </div>
 						        <div class="modal-footer">
-						          
 						        </div>
 						      </div>		      
 						    </div>
@@ -479,7 +538,7 @@
 				    <div class="col-sm-3 post etc">
 					    <a  data-toggle="modal" data-target="#webtoon2">					    	
 					      <div class="post-thum"><img src="https://i.imgur.com/L8Fqivb.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt=""></div>      
-					      <p></p>
+					      <p class="post-thum-ttl">웹툰 2</p>
 					    </a>
 				    	<!-- Modal -->
 						  <div class="modal fade" id="webtoon2" role="dialog">
@@ -495,6 +554,9 @@
 						          <h4 class="modal-title">Webtoon 2</h4>
 						        </div>
 						        <div class="modal-body">
+						           <p><strong>Webtoon 2</strong><br>
+						           사용 툴은 포토샵, 자작
+						           </p>
 						           <img src="https://i.imgur.com/L8Fqivb.jpg" alt="">
 						           <img src="https://i.imgur.com/riEx7QX.jpg" alt="">
 						           <img src="https://i.imgur.com/pIR608V.jpg" alt="">
@@ -503,7 +565,6 @@
 						           <img src="https://i.imgur.com/PH9ZMNf.jpg" alt="">
 						           <img src="https://i.imgur.com/lmwdcXw.jpg" alt="">
 						           <img src="https://i.imgur.com/xFZbHqH.jpg" alt="">
-						           <p>Webtoon - Photoshop</p>
 						        </div>
 						        <div class="modal-footer">
 						          
@@ -515,7 +576,7 @@
 				    <div class="col-sm-3 post etc">
 					    <a  data-toggle="modal" data-target="#webtoon3">					    	
 					      <div class="post-thum"><img src="https://i.imgur.com/cB3pqTL.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt=""></div>      
-					      <p></p>
+					      <p class="post-thum-ttl">웹툰 3</p>
 					    </a>
 				    	<!-- Modal -->
 						  <div class="modal fade" id="webtoon3" role="dialog">
@@ -531,12 +592,14 @@
 						          <h4 class="modal-title">Webtoon 3</h4>
 						        </div>
 						        <div class="modal-body">
-						           <img src="https://i.imgur.com/cB3pqTL.jpg" alt="">
+						           <p><strong>Webtoon 3</strong><br>
+						           사용 툴은 포토샵, 자작
+						           </p>						        	
+						            <img src="https://i.imgur.com/cB3pqTL.jpg" alt="">
 			 						<img src="https://i.imgur.com/XJOl1ua.jpg" alt="">
 			 						<img src="https://i.imgur.com/I8688zc.jpg" alt="">
 			 						<img src="https://i.imgur.com/dBcTvqS.jpg" alt="">
 			 						<img src="https://i.imgur.com/0ctLUIp.jpg" alt="">
-						           <p>Webtoon - Photoshop</p>
 						        </div>
 						        <div class="modal-footer">
 						          
@@ -548,7 +611,7 @@
 				    <div class="col-sm-3 post etc">
 					    <a  data-toggle="modal" data-target="#webtoon4">					    	
 					      <div class="post-thum"><img src="https://i.imgur.com/h0hyofn.jpg" onerror="this.src="https://i.imgur.com/a92Q3oQ.jpg" alt=""></div>      
-					      <p></p>
+					      <p class="post-thum-ttl">웹툰 4</p>
 					    </a>
 				    	<!-- Modal -->
 						  <div class="modal fade" id="webtoon4" role="dialog">
@@ -564,7 +627,10 @@
 						          <h4 class="modal-title">Webtoon 4</h4>
 						        </div>
 						        <div class="modal-body">
-						           <img src="https://i.imgur.com/h0hyofn.jpg" alt="">
+						           <p><strong>Webtoon 4</strong><br>
+						           사용 툴은 포토샵, 자작
+						           </p>						        	
+ 						            <img src="https://i.imgur.com/h0hyofn.jpg" alt="">
 			 						<img src="https://i.imgur.com/2CQ3HEX.jpg" alt="">
 			 						<img src="https://i.imgur.com/TVqnCvA.jpg" alt="">
 			 						<img src="https://i.imgur.com/gbTiWj6.jpg" alt="">
@@ -573,7 +639,6 @@
 									<img src="https://i.imgur.com/OwZv045.jpg" alt="">
 									<img src="https://i.imgur.com/PmsyavN.jpg" alt="">
 									<img src="https://i.imgur.com/OJqxIiN.jpg" alt="">
-						           <p>Webtoon - Photoshop</p>
 						        </div>
 						        <div class="modal-footer">
 						          
@@ -585,11 +650,8 @@
 			 </div><!--row end-->
 	</div><!--container end-->
 	<footer class="footer">
-	  
 	    <div class="footer-text">
-	      
-	        Copyright © All rights reserved.
-	      
+	        Copyright 2020. Annie.P All rights reserved.
 	    </div>
 	    <nav class="footer-social">            
 	            <a href="javascript:void(0);" class="social-link" target="_blank" title="Twitter">         
@@ -604,8 +666,6 @@
 	                <i class="fab fa-instagram social-icon"></i>
 	            </a>   
 		</nav>
-
-	  
 	</footer>
 
 	<a id="back-to-top" href="#" class="btn btn-sm back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
@@ -613,34 +673,3 @@
 </body>	
 </html>
 
-<script>
-var elementPosition = $('.header_nav').offset();
-var elementP = $('.bn').offset();
-
-$(window).scroll(function () {
-    if ($(window).scrollTop() > elementPosition.top) {
-        $('.header_nav').css('position', 'fixed').css('top', '0').css('margin-top','0');
-    } else {
-        $('.header_nav').css('position', 'static').css('margin-top','10px');
-    }
-});
-
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-        
-        $('#back-to-top').tooltip('show');
-
-</script>

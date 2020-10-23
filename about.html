@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	  <title>Annie's Page</title>
+	  <title>Annie's Contact</title>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
   
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&amp;subset=korean" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://randhk.github.io/new/about.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://randhk.github.io/new/default.css">
     <link rel="icon" sizes="192x192" href="https://randhk.github.io/new/favi_192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://randhk.github.io/new/favi_180.png">
     <link rel="icon" sizes="32x32" href="https://randhk.github.io/new/favi_32.png">
     <link rel="icon" sizes="32x32" href="https://randhk.github.io/new/favi_16.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://randhk.github.io/new/default.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -25,14 +27,14 @@
 	</div>
   
   	<div class="nav bn header_nav">
-		  <div class="col-sm-12">
-        <a href="https://randhk.github.io/new/main.html">WORK</a>
-        <a href="https://randhk.github.io/new/about.html">ABOUT</a>
-        <a href="https://randhk.github.io/new/resume.html">RESUME</a>
+      <div class="col-sm-12">
+          <a href="https://randhk.github.io/new/main.html">WORK</a>
+          <a href="https://randhk.github.io/new/resume.html">RESUME</a>
+          <a href="https://randhk.github.io/new/about.html">CONTACT</a> 
 		  </div>
    	</div>		
-	<div class="container">
-			  <div class="row posts">
+	<div class="container" data-aos="fade-up">
+			  <div class="row">
 				    <div class="col-sm-6">
 				      <img src="https://i.pinimg.com/originals/0a/4f/9e/0a4f9e4f0ea956a84973c30ad171e564.jpg" alt="me">
 				    </div>
@@ -136,12 +138,9 @@
 			
 
 	</div><!--container end-->
-<footer class="footer">
-  
+<footer class="footer" data-aos="fade-up">
     <div class="footer-text">
-      
-        Copyright © All rights reserved.
-      
+        Copyright 2020. Annie.P All rights reserved.  
     </div>
     <nav class="footer-social">            
             <a href="javascript:void(0);" class="social-link" target="_blank" title="Twitter">         
@@ -164,37 +163,6 @@
 
 </body>	
 </html>
-
-<script>
-var elementPosition = $('.header_nav').offset();
-var elementP = $('.bn').offset();
-
-$(window).scroll(function () {
-    if ($(window).scrollTop() > elementPosition.top) {
-        $('.header_nav').css('position', 'fixed').css('top', '0').css('margin-top','0');
-    } else {
-        $('.header_nav').css('position', 'static').css('margin-top','10px');
-    }
-});
-
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-        
-        $('#back-to-top').tooltip('show');
-</script>
 
 
 
